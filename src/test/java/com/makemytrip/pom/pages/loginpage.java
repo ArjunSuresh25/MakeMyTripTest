@@ -1,4 +1,4 @@
-package com.mytrip.pom.pages;
+package com.makemytrip.pom.pages;
 
 import java.time.Duration;
 

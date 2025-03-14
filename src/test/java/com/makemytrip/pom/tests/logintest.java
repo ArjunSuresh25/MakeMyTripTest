@@ -12,8 +12,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.makemytrip.pom.pages.loginpage;
 import com.makemytrip.utils.DriverManager;
-import com.mytrip.pom.pages.loginpage;
 
 public class logintest{
 WebDriver driver;
