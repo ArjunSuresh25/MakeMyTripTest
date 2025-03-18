@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,11 @@ loginpage loginPage;
 public void setup() throws Exception {
     driver = DriverManager.getDriver();
     loginPage = new loginpage(driver);
+    
+ // Clear cookies and cache
+//    driver.manage().deleteAllCookies();
+//    driver.get("chrome://settings/clearBrowserData");
+    
     driver.get("https://www.makemytrip.com/");
     //loginPage.closepopup();
     
@@ -38,15 +44,15 @@ public void setup() throws Exception {
 @Test(groups = "login")
 public void testLogin() {
 	
-    loginPage.enterUsername("yisojak371@payposs.com");
+    loginPage.enterUsername("mmtriptest@gmail.com");
     loginPage.enterPassword("testtest@123");
     loginPage.clickLogin();
     boolean cnd = driver.findElement(By.xpath("//*[@id=\"SW\"]/div[1]/div[1]/ul/li[4]/div[2]/p")).getText().contains("Hi");
     Assert.assertTrue(cnd);
 }
 
-//@AfterClass
-//public void teardown() {
-//    DriverManager.quitDriver();
-//}
+@AfterClass
+public void teardown() {
+    DriverManager.quitDriver();
+}
 }

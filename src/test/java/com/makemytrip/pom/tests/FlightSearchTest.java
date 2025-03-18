@@ -32,14 +32,14 @@ public class FlightSearchTest {
 
     @Test(groups = "flight")
     public void testFlightSearch() {
-        flightSearch.selectFromCity("Delhi");
+        flightSearch.selectFromCity("Bengaluru");
         flightSearch.selectToCity("Mumbai");
         flightSearch.selectDepartureDate();
         flightSearch.clickSearch();
     }
 
-//    @AfterClass
-//    public void teardown() {
-//        DriverManager.quitDriver();
-//    }
+    @AfterClass
+    public void teardown() {
+        DriverManager.quitDriver();
+    }
 }

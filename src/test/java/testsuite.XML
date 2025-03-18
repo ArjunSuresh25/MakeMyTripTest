@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Suite">
-  <test name="Test">
+  <test name="LoginTest">
     <classes>
       <class name="com.makemytrip.pom.tests.logintest"/>
+      <class name="com.makemytrip.pom.tests.FlightSearchTest"/>
     </classes>
   </test> <!-- Test -->
+  <!--<test name="FlightTest">
+  <groups>
+      <run>
+        <include name="flight"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.makemytrip.pom.tests.FlightSearchTest"/>
+    </classes>
+  </test>  Test -->
 </suite> <!-- Suite -->
