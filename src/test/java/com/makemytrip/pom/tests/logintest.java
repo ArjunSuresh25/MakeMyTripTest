@@ -41,7 +41,7 @@ public void setup() throws Exception {
     loginPage.goToLogin();
     loginPage.selectmail();
 }
-@Test(groups = "login")
+@Test(priority=1, groups = "login")
 public void testLogin() {
 	
     loginPage.enterUsername("mmtriptest@gmail.com");

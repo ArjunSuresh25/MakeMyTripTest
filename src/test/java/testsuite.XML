@@ -4,6 +4,8 @@
     <classes>
       <class name="com.makemytrip.pom.tests.logintest"/>
       <class name="com.makemytrip.pom.tests.FlightSearchTest"/>
+      <class name="com.makemytrip.pom.tests.HotelBookingTest"/>
+      
     </classes>
   </test> <!-- Test -->
   <!--<test name="FlightTest">

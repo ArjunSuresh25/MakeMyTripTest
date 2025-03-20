@@ -30,7 +30,7 @@ public class FlightSearchTest {
         flightSearch = new FlightSearch(driver);
     }
 
-    @Test(groups = "flight")
+    @Test(priority=2, groups = "flight")
     public void testFlightSearch() {
         flightSearch.selectFromCity("Bengaluru");
         flightSearch.selectToCity("Mumbai");
